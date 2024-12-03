@@ -4,17 +4,17 @@ import re
 data = get_data(day=3, year=2024)
 
 # Part one
-matches = re.findall(r"mul\((\d+),(\d+)\)", data, re.MULTILINE)
+matches = re.findall(r"mul\((\d+),(\d+)\)", data)
 total = 0
 for match in matches:
 	total += int(match[0]) * int(match[1])
 print(total)
 
 # One-liner
-# print(sum(int(x) * int(y) for x, y in re.findall(r"mul\((\d+),(\d+)\)", data, re.MULTILINE)))
+# print(sum(int(x) * int(y) for x, y in re.findall(r"mul\((\d+),(\d+)\)", data)))
 
 # Part two
-matches = re.finditer(r"mul\((\d+),(\d+)\)", data, re.MULTILINE)
+matches = re.finditer(r"mul\((\d+),(\d+)\)", data)
 total = 0
 for match in matches:
 	start = match.start()
