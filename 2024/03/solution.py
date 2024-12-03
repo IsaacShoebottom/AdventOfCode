@@ -29,9 +29,9 @@ def part_two():
 			total += int(match.group(1)) * int(match.group(2))
 			continue
 		if do_match > dont_match: # Do
-			total += int(match.group(1)) * int(match.group(2)) # Don't
+			total += int(match.group(1)) * int(match.group(2))
 			continue
-		else:
+		else: # Don't
 			continue
 
 	print(total)
