@@ -1,7 +1,9 @@
+from aocd import get_data
+data = get_data(day=3, year=2024)
+
 list1 = []
 list2 = []
-file = open("input.txt", "r").read()
-lines = file.split("\n")
+lines = data.split("\n")
 for line in lines:
     nums = line.split("   ")
     num1 = int(nums[0])

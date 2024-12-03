@@ -1,5 +1,6 @@
-file = open("input.txt", "r").read()
-lines = file.split("\n")
+from aocd import get_data
+data = get_data(day=2, year=2024)
+lines = data.split("\n")
 reports = []
 for line in lines:
 	nums = line.split(" ")
