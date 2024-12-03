@@ -19,10 +19,6 @@ for match in matches:
 	dont_match = data.rfind("don't()", 0, start)
 	if do_match == dont_match == -1: # Neither
 		total += int(match.group(1)) * int(match.group(2))
-		continue
-	if do_match > dont_match: # Do
+	elif do_match > dont_match: # Do
 		total += int(match.group(1)) * int(match.group(2))
-		continue
-	else: # Don't
-		continue
 print(total)
