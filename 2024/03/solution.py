@@ -10,6 +10,9 @@ for match in matches:
 	total += int(match[0]) * int(match[1])
 print(total)
 
+# One-liner
+# print(sum(int(x) * int(y) for x, y in re.findall(r"mul\((\d+),(\d+)\)", data, re.MULTILINE)))
+
 # Part two
 matches = re.finditer(r"mul\((\d+),(\d+)\)", data, re.MULTILINE)
 total = 0
