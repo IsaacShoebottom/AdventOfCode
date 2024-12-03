@@ -1,5 +1,7 @@
 from aocd import get_data
 data = get_data(day=2, year=2024)
+
+# Condition data
 lines = data.split("\n")
 reports = []
 for line in lines:
@@ -10,6 +12,7 @@ for line in lines:
 total_safe = 0
 safe_nums = [1, 2, 3]
 
+# Part 1
 for report in reports:
 	dists = [report[i+1] - report[i] for i in range(len(report)) if i != len(report) - 1]
 	# dists is either all positive or all negative (checks all increasing or all decreasing)
@@ -20,6 +23,7 @@ for report in reports:
 
 print("Total safe reports: ", total_safe)
 
+# Part 2
 total_safe_tolerance = 0
 for report in reports:
 	print("Checking report: ", report)
