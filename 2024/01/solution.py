@@ -1,5 +1,5 @@
 from aocd import get_data
-data = get_data(day=3, year=2024)
+data = get_data(day=1, year=2024)
 
 list1 = []
 list2 = []
