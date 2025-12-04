@@ -46,6 +46,7 @@ print(count)
 # part 2
 count_two = 0
 
+
 def remove_rolls(count, table):
 	for y in range(1, len(table) - 1):
 		for x in range(1, len(table[0]) - 1):
@@ -62,6 +63,7 @@ def remove_rolls(count, table):
 					count += 1
 					table[y][x] = empty
 	return count, table
+
 
 prev = -1
 table_two = padded_table.copy()
