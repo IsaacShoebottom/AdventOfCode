@@ -68,5 +68,4 @@ table_two = padded_table.copy()
 while prev != count_two:
 	prev = count_two
 	count_two, table_two = remove_rolls(count_two, table_two)
-	print(count_two)
 print(count_two)
